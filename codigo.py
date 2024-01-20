@@ -6,7 +6,7 @@ def generate_text_file(file_path):
         file.write("¡Hola, esto es un archivo de texto generado!")
 
 def upload_to_s3(file_path, bucket_name, object_key):
-    s3 = boto3.client('s3')
+    s3 = boto3.client('s3', region_name='eu-south-2')
     try:
         with open(file_path, 'rb') as data:
             s3.upload_fileobj(data, bucket_name, object_key)
