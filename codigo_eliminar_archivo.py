@@ -11,7 +11,7 @@ def delete_object_s3(bucket_name, object_key):
 
 if __name__ == "__main__":
     # Definir parámetros
-    bucket_name = 'mi-bucket-s3'
+    bucket_name = 's3actividad'
     object_key = 'carpeta/archivo.txt'
 
     # Eliminar el archivo en S3
