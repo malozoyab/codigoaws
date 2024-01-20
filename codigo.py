@@ -17,7 +17,7 @@ def upload_to_s3(file_path, bucket_name, object_key):
 if __name__ == "__main__":
     # Definir parámetros
     file_path = 'archivo.txt'  # Ruta local del archivo a generar y subir
-    bucket_name = 'mi-bucket-s3'
+    bucket_name = 's3actividad'
     object_key = 'carpeta/archivo.txt'
 
     # Generar el archivo de texto
